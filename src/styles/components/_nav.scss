@@ -1,0 +1,19 @@
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      padding: 0 1em;
+      a {
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

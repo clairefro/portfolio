@@ -1,9 +1,10 @@
-import React from "react"
+import React from 'react';
 
 export default () => (
   <div className="container">
     <div className="page">
-      Hello world!
+      <p>Contac</p>
     </div>
   </div>
+
 )

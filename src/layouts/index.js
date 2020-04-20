@@ -1,9 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-const Layout = ({ children }) => (
-  <div>
-    {children}
-  </div>
-);
+import Nav from '../components/nav'
+
+import '../styles/index.scss'
+
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Nav />
+      {children}
+    </div>
+  )
+}
+
 
 export default Layout;
