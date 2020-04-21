@@ -1,0 +1,16 @@
+.main-banner {
+  position: relative;
+  border-bottom: solid 3px $black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height:200px;
+  overflow: hidden;
+  .main-banner-img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    filter: $grayscale-contrast-filter;
+  }
+}

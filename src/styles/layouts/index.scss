@@ -2,10 +2,26 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   font-size: 16px;
   color: $black;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  line-height: 22px;
+}
+
+a {
+  color: $orange;
+  &:hover {
+
+  }
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 2em 4em;
 }

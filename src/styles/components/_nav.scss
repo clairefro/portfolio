@@ -1,7 +1,10 @@
 .nav {
+  max-width: 800px;
+  margin: 0 auto;
   ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     li {
       padding: 0 1em;
       a {
