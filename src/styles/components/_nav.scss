@@ -16,7 +16,7 @@
         text-transform: uppercase;
         color: $black;
         &:hover {
-          color: $orange;
+          color: $sand-dark;
         }
       }
     }
@@ -31,7 +31,7 @@
     top: 0;
     padding-top: 4px;
     padding-bottom: 10px;
-    background-color: $orange;
+    background-color: $sand-dark;
     *:focus {
       outline-color: #FFFFFF;
     }
