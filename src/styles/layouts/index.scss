@@ -24,10 +24,9 @@ a {
   }
 }
 
-
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em 4em;
+  min-height: calc(100vh - 350px);
 }
