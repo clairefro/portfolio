@@ -7,11 +7,11 @@ import '../styles/index.scss'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <MainBanner />
       <Nav />
       {children}
-    </div>
+    </>
   )
 }
 

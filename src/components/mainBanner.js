@@ -9,7 +9,7 @@ const MainBanner = () => {
         <Slide bottom>
           <img src={imgMe} alt="Claire Froelich with rubber duck on her head" className="main-banner-img" />
         </Slide>
-      <div className="ml-4">
+      <div>
         <h1>{'{ Claire Froelich }'}</h1>
         <h2>{'// Full Stack Web Developer'}</h2>
       </div>

@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
 import Slide from 'react-reveal/Slide'
 
 const Nav = (props) => {
+  const [isSticky, setSticky] = useState(false)
+  const prevScrollY = useRef(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      208 < currentScrollY ? setSticky(true) : setSticky(false)
+      prevScrollY.current = currentScrollY;
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    // remove listener on dismount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isSticky])
+
   return (
     <Slide left>
-      <div className="nav">
+      <div className={`nav${isSticky ? ' sticky' : ''}`}>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -20,6 +34,11 @@ const Nav = (props) => {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
+        { isSticky &&
+          <div className="nav-right">
+            <Link to="/">{'{ Claire Froelich }'}</Link>
+          </div>
+        }
       </div>
     </Slide>
   )

@@ -1,6 +1,8 @@
 .nav {
-  max-width: 800px;
+  width: 800px;
   margin: 0 auto;
+  transition: padding 0.3s ease;
+  z-index: 10;
   ul {
     list-style: none;
     display: flex;
@@ -19,4 +21,36 @@
       }
     }
   }
+  &.sticky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-color: $orange;
+    *:focus {
+      outline-color: #FFFFFF;
+    }
+    ul {
+      justify-content: flex-start;
+    }
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    .nav-right {
+      justify-self: flex-end;
+      padding-right: 60px;
+      font-size: 20px;
+      font-family: 'Mansalva', monospace;
+    }
+  }
+}
+
+.nav.sticky + .container {
+  padding-top: 120px;
 }
