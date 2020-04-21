@@ -16,7 +16,7 @@
         text-transform: uppercase;
         color: $black;
         &:hover {
-          color: $sand-dark;
+          color: $orange-red;
         }
       }
     }
@@ -31,7 +31,7 @@
     top: 0;
     padding-top: 4px;
     padding-bottom: 10px;
-    background-color: $sand-dark;
+    background-color: $black-light;
     *:focus {
       outline-color: #FFFFFF;
     }
@@ -44,7 +44,7 @@
     }
     .nav-right {
       justify-self: flex-end;
-      padding-right: 60px;
+      padding-right: 40px;
       font-size: 20px;
       font-family: 'Mansalva', monospace;
     }
