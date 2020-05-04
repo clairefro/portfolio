@@ -4,16 +4,16 @@ import SVG from 'react-inlinesvg'
 
 
 const borderColors = {
-  frontend: "#DEF5F7",
-  backend: "#FAE6D2",
-  hosting: "#F8EBC5",
-  tools: "#F5F5F5",
-  api: "#E0F3E9",
+  frontend: "#59C3C3",
+  backend: "#FE7F17",
+  hosting: "#92B4A7",
+  tools: "#BCB8B1",
+  api: "#A8763E",
 }
 
 const StackItem = ({ name, category, icon }) => {
 
-  const style = { backgroundColor: borderColors[category]}
+  const style = { borderColor: borderColors[category]}
 
   return (
     <div className="stack-item" style={style}>
