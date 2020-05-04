@@ -1,6 +1,7 @@
 import React from "react"
 
 import StackList from '../components/stackList'
+import Timeline from '../components/timeline'
 
 export default () => (
   <div className="container">
@@ -13,6 +14,9 @@ export default () => (
       <div className="text-box">
         <h3>Stack</h3>
         <StackList />
+        <div className="section section-colored-background">
+          <Timeline />
+        </div>
       </div>
 
     </div>

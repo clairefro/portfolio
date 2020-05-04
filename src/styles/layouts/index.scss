@@ -25,7 +25,6 @@ p {
 a {
   color: $orange;
   &:hover {
-
   }
 }
 
@@ -34,6 +33,14 @@ a {
   margin: 0 auto;
   padding: 2em 4em;
   min-height: calc(100vh - 350px);
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.section-colored-background {
+  background-color: $sand-light;
 }
 
 
