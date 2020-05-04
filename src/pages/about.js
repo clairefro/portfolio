@@ -11,14 +11,15 @@ export default () => (
         <p>I like to build things with people.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla at libero totam quos laboriosam quo, quod dicta cupiditate laudantium necessitatibus voluptatum quibusdam magni, alias ex, facere sunt, accusamus iste.</p>
       </div>
-      <div className="text-box">
-        <h3>Stack</h3>
-        <StackList />
-        <div className="section section-colored-background">
-          <Timeline />
+      <div className="section">
+        <div className="text-box">
+          <h3>Stack</h3>
+          <StackList />
         </div>
       </div>
-
+      <div className="section section-colored-background">
+        <Timeline />
+      </div>
     </div>
   </div>
 )
