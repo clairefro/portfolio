@@ -8,9 +8,13 @@ body {
 
 * {
   box-sizing: border-box;
-}
-*:focus {
-  outline-color: $orange;
+  &:focus {
+    outline-color: $orange;
+  }
+  &::selection {
+    background-color: $orange;
+    color: white;
+  }
 }
 
 h1 {
