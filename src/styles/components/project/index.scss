@@ -1,0 +1,68 @@
+.project {
+  margin: 100px auto;
+  max-width: 900px;
+  display: flex;
+  height: 300px;
+  img {
+    margin: 0 auto;
+    height: 100%;
+    width: 30%;
+    object-fit: contain;
+    transition: 0.3s ease;
+    z-index: 2;
+    &:hover {
+      transform: scale(2.5) translateX(50%);
+      transition: 0.3s ease;
+      cursor: -moz-zoom-in;
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in;
+    }
+  }
+  .project-details {
+    flex-grow: 1;
+    padding: 24px;
+    padding-left: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .project-stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      height: max-content;
+      .project-stack-list-item-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 4px;
+        margin-bottom: 14px;
+        position: relative;
+        .project-stack-list-item-icon-tooltip {
+          visibility: hidden;
+          position: absolute;
+          bottom: -18px;
+          color: $grey-dark;
+          font-size: 14px;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+        svg {
+          width: 56px;
+          height: 56px;
+          padding: 8px;
+          border-radius: 50%;
+          border: solid 1px $grey;
+          margin: 0 2px;
+          &:hover + div {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .project-links {
+      margin-top: 8px;
+    }
+  }
+}

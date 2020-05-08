@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'gatsby'
 import Slide from 'react-reveal/Slide'
+import { useLocation } from "@reach/router"
 
-const Nav = (props) => {
+const Nav = () => {
   const [isSticky, setSticky] = useState(false)
+  const [selected, setSelected] = useState(false)
   const prevScrollY = useRef(0)
+  const { pathname: currPath } = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
