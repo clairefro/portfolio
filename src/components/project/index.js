@@ -24,7 +24,6 @@ const Project = (props) => {
       <SVG src={s.icon} />
       <div className="project-stack-list-item-icon-tooltip">{s.name}</div>
     </div>
-
   ))
 
   const formattedLinks = links.map((l,i) => (

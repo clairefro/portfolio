@@ -2,7 +2,8 @@
   margin: 100px auto;
   max-width: 900px;
   display: flex;
-  height: 300px;
+  align-items: center;
+  min-height: 300px;
   img {
     filter: drop-shadow(0px 0px 1px rgba(0,0,0,.3))
             drop-shadow(0px 0px 10px rgba(0,0,0,.3));

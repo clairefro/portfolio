@@ -54,6 +54,17 @@ a {
   font-weight: bold;
 }
 
+.text-box {
+  max-width: 500px;
+}
+
+.ta-center {
+  text-align: center;
+}
+.ta-right {
+  text-align: right;
+}
+
 @media only screen and (max-width: $Phones) {
   .container {
     padding: 2em 1.5em;

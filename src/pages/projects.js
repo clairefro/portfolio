@@ -27,7 +27,7 @@ export default () => (
       <Project
         img={imgNYSE}
         title="NY Sock Exchange"
-        description="A fake e-commerce site for buying and selling socks, complete with user auth and checkout.<br /> Enjoy a shopping spree on my credit card: <br /> 4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
+        description="A fake e-commerce site for buying and selling socks, complete with user authentication and checkout. Enjoy a shopping spree on my credit card: <br /> 4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
         stack={['next', 'react', 'apollo', 'jest', 'prisma', 'graphql', 'heroku', 'stripe', 'postgresql']}
         links={[
           ['Demo', 'https://nyse-next-prod.herokuapp.com/'],
@@ -37,8 +37,8 @@ export default () => (
       <Project
         img={imgBonjourhi}
         title="BonjourHi"
-        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP built in 10 days with a team of four."
-        stack={['rails', 'js', 'sass', 'heroku']}
+        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP designed and built in 10 days with a team of four."
+        stack={['rails', 'js', 'sass', 'heroku', 'postgresql']}
         links={[
           ['Demo', 'https://bonjourhiapp.herokuapp.com/'],
           ['Code', 'https://github.com/clairefro/bonjourhi'],
