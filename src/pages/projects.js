@@ -14,7 +14,6 @@ import imgClairefro from '../../static/images/projects/clairefro.png'
 export default () => (
   <div className="container">
     <div className="page">
-      <h2>Projects</h2>
       <Project
         img={imgIncorpus}
         title="inCORPUS website"

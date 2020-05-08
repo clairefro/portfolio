@@ -19,16 +19,17 @@ const Project = (props) => {
   const stackListItemIcons = stackListData.filter(s => {
     return stack.map(x=> x.toLowerCase()).includes(s.name.toLowerCase())
     })
-  .map(s => (
-    <div className="project-stack-list-item-icon">
+  .map((s,i) => (
+    <div key={i} className="project-stack-list-item-icon">
       <SVG src={s.icon} />
       <div className="project-stack-list-item-icon-tooltip">{s.name}</div>
     </div>
 
   ))
 
-  const formattedLinks = links.map(l => (
+  const formattedLinks = links.map((l,i) => (
     <a
+      key={i}
       href={l[1]}
       target="_blank"
       rel="noopener noreferrer"

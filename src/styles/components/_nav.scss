@@ -18,6 +18,9 @@
         &:hover {
           color: $orange-red;
         }
+        &.selected {
+          color: $orange-red;
+        }
       }
     }
   }

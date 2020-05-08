@@ -41,7 +41,7 @@
         .project-stack-list-item-icon-tooltip {
           visibility: hidden;
           position: absolute;
-          bottom: -18px;
+          bottom: -14px;
           color: $grey-dark;
           font-size: 14px;
           margin-left: auto;
@@ -56,7 +56,7 @@
           padding: 8px;
           border-radius: 50%;
           border: solid 1px $grey;
-          margin: 0 2px;
+          margin: 2px;
           &:hover + div {
             visibility: visible;
           }

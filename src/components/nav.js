@@ -3,9 +3,11 @@ import { Link } from 'gatsby'
 import Slide from 'react-reveal/Slide'
 import { useLocation } from "@reach/router"
 
+
+
 const Nav = () => {
   const [isSticky, setSticky] = useState(false)
-  const [selected, setSelected] = useState(false)
+  const [selected, setSelected] = useState(null)
   const prevScrollY = useRef(0)
   const { pathname: currPath } = useLocation()
 
@@ -20,21 +22,61 @@ const Nav = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isSticky])
 
+  useEffect(()=> {
+    if (currPath.match(/(^\/$)|(^\w+\/$)/)) {
+      setSelected('home')
+    } else if (currPath.match(/\/projects\//)) {
+      setSelected('projects')
+    } else if (currPath.match(/\/contributions\//)) {
+      setSelected('contributions')
+    } else if (currPath.match(/\/contact\//)) {
+      setSelected('contact')
+    }
+  },[])
+
+  const updateSelected = (e) => {
+    setSelected(e.target.innerText.toLowerCase())
+  }
+
   return (
     <Slide left>
       <div className={`nav${isSticky ? ' sticky' : ''}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              onClick={updateSelected}
+              className={selected === 'home' ? "selected" : null}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link
+              to="/projects"
+              onClick={updateSelected}
+              className={selected === 'projects' ? "selected" : null}
+            >
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/contributions">Contributions</Link>
+            <Link
+              to="/contributions"
+              onClick={updateSelected}
+              className={selected === 'contributions' ? "selected" : null}
+              >
+              Contributions
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link
+              to="/contact"
+              onClick={updateSelected}
+              className={selected === 'contact' ? "selected" : null}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         { isSticky &&
@@ -47,4 +89,4 @@ const Nav = () => {
   )
 }
 
-export default Nav;
+export default Nav

@@ -18,6 +18,7 @@ import jest from '../../images/icons/stack/jest.svg'
 import js from '../../images/icons/stack/js.svg'
 import mapbox from '../../images/icons/stack/mapbox.svg'
 import netlify from '../../images/icons/stack/netlify.svg'
+import next from '../../images/icons/stack/nextjs.svg'
 import nodejs from '../../images/icons/stack/nodejs.svg'
 import npm from '../../images/icons/stack/npm.svg'
 import postgresql from '../../images/icons/stack/postgresql.svg'
@@ -107,6 +108,11 @@ export const stackListData = [
     category: "backend",
     name: "Apollo",
     icon: apollostack,
+  },
+  {
+    category: "backend",
+    name: "Next",
+    icon: next,
   },
   {
     category: "hosting",
