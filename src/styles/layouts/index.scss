@@ -58,9 +58,17 @@ a {
   max-width: 500px;
 }
 
+.text-box.center {
+  max-width: 600px;
+  h2, h3, p {
+    text-align: center;
+  }
+}
+
 .ta-center {
   text-align: center;
 }
+
 .ta-right {
   text-align: right;
 }

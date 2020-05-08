@@ -13,11 +13,13 @@ const borderColors = {
 
 const StackItem = ({ name, category, icon }) => {
 
-  const style = { borderColor: borderColors[category]}
+  const style = { color: borderColors[category], borderColor: borderColors[category]}
 
   return (
-    <div className="stack-item" style={style}>
-      <SVG src={icon} className="stack-item-icon" />
+    <div className="stack-item">
+      <div className="stack-item-icon" style={style}>
+        <SVG src={icon} />
+      </div>
       <p>{name}</p>
     </div>
   )

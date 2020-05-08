@@ -1,4 +1,5 @@
 import React from "react"
+import Fade from 'react-reveal/Fade'
 
 import Project from '../components/project'
 
@@ -14,20 +15,22 @@ import imgClairefro from '../../static/images/projects/clairefro.png'
 export default () => (
   <div className="container">
     <div className="page">
-      <Project
-        img={imgIncorpus}
-        title="inCORPUS website"
-        description="French and English B2B marketing website for an athletic technology company"
-        stack={['gatsby', 'react', 'graphql', 'contentful', 'netlify', 'intercom']}
-        links={[
-          ['Live site', 'https://www.in-corpus.com/'],
-          ['Code', 'https://github.com/clairefro/incorpus'],
-        ]}
-      />
+      <Fade bottom>
+        <Project
+          img={imgIncorpus}
+          title="inCORPUS website"
+          description="French and English B2B marketing website for an athletic technology company"
+          stack={['gatsby', 'react', 'graphql', 'contentful', 'netlify', 'intercom']}
+          links={[
+            ['Live site', 'https://www.in-corpus.com/'],
+            ['Code', 'https://github.com/clairefro/incorpus'],
+          ]}
+        />
+      </Fade>
       <Project
         img={imgNYSE}
         title="NY Sock Exchange"
-        description="A fake e-commerce site for buying and selling socks, complete with user authentication and checkout. Enjoy a shopping spree on my credit card: <br /> 4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
+        description="A fake e-commerce site for buying and selling socks, complete with user authentication and checkout. Enjoy a shopping spree on my credit card: 4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
         stack={['next', 'react', 'apollo', 'jest', 'prisma', 'graphql', 'heroku', 'stripe', 'postgresql']}
         links={[
           ['Demo', 'https://nyse-next-prod.herokuapp.com/'],
@@ -58,8 +61,8 @@ export default () => (
       />
       <Project
         img={imgAirbnb}
-        title="AirBnb Clone"
-        description="Simple AirBnb clone I used for teaching an Intro to React workshop to Le Wagon Coding Bootcamp graduates."
+        title="Airbnb Clone"
+        description="Simple Airbnb clone I used for teaching an Intro to React workshop to Le Wagon Coding Bootcamp graduates."
         stack={['react', 'css3', 'mapbox']}
         links={[
           ['Demo', 'https://clairefro.github.io/airbnb-clone/'],
