@@ -9,6 +9,7 @@ import imgNYSE from '../../static/images/projects/nyse.png'
 import imgAMSIR from '../../static/images/projects/amisayingitright.png'
 import imgAirbnb from '../../static/images/projects/airbnb.png'
 import imgSlack from '../../static/images/projects/slack.png'
+import imgClairefro from '../../static/images/projects/clairefro.png'
 
 export default () => (
   <div className="container">
@@ -48,7 +49,7 @@ export default () => (
       <Project
         img={imgAMSIR}
         title="Am I Saying it Right?"
-        description="Simple app for checking your proncounciation of words in various languages using speech-to-text and text-to-speech (Chrome browser)"
+        description="Simple app for checking your pronunciation of words in various languages using speech-to-text and text-to-speech (Chrome browser)"
         stack={['js', 'css3', 'html5']}
         links={[
           ['Demo', 'https://clairefro.github.io/am-i-saying-it-right/'],
@@ -74,6 +75,15 @@ export default () => (
         links={[
           ['Demo', 'https://clairefro.github.io/https://clairefro.github.io/chat-redux/'],
           ['Code', 'https://github.com/clairefro/chat-redux'],
+        ]}
+      />
+      <Project
+        img={imgClairefro}
+        title="... this website"
+        description="So meta."
+        stack={['react', 'gatsby', 'sass']}
+        links={[
+          ['Code', 'https://github.com/clairefro/portfolio'],
         ]}
       />
     </div>

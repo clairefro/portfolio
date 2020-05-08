@@ -40,7 +40,7 @@ const Project = (props) => {
 
   return (
     <div {...otherProps} id={title} className={className ? `project ${className}` : "project" }>
-      <img src={img} alt={title} className="project-image" />
+      <img src={img} alt={title} className="project-image"/>
       <div className="project-details">
         <div className="project-details-top">
           <h3>{title}</h3>
