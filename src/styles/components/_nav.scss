@@ -61,6 +61,9 @@
 @media only screen and (max-width: 835px) {
   .nav {
     width: 100%;
+    .nav-right {
+      display: none;
+    }
     ul {
       padding-right:40px;
       li {
@@ -75,5 +78,8 @@
 @media only screen and (max-width: 533px) {
   .nav ul li a {
     writing-mode:vertical-rl;
+  }
+  .nav.sticky {
+    display: none;
   }
 }
