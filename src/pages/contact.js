@@ -1,9 +1,12 @@
 import React from "react"
+import Fade from 'react-reveal/Fade'
 
 import ContactForm from '../components/contactForm'
 
 export default () => (
   <div className="container">
-    <ContactForm />
+    <Fade bottom>
+      <ContactForm />
+    </Fade>
   </div>
 )
