@@ -1,0 +1,17 @@
+.socials {
+  display: block;
+  margin: 1rem 0;
+  a {
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: $black;
+    }
+    &:hover svg {
+      fill: $orange;
+    }
+  }
+  > * {
+    margin: .25rem;
+  }
+}

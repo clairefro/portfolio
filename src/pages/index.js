@@ -1,26 +1,27 @@
 import React from "react"
+import { Link } from 'gatsby'
 
 import StackList from '../components/stackList'
 import Timeline from '../components/timeline'
+import Socials from '../components/socials'
 
 export default () => (
   <div className="container">
     <div className="page">
 
-      Hello world!
-      <div className="text-box">
-        <h3>Title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo perspiciatis vel ut libero quia eveniet facere. Ipsa dolor nihil, praesentium repellat veritatis ipsum modi consequatur exercitationem quod libero ab quidem.</p>
-      </div>
-      <div className="text-box">
+      <div className="ta-center">
+        <Socials />
+        <h3>Hello world!</h3>
         <p>I like to build things with people.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla at libero totam quos laboriosam quo, quod dicta cupiditate laudantium necessitatibus voluptatum quibusdam magni, alias ex, facere sunt, accusamus iste.</p>
+        <Link to="/projects">Take a look</Link>
       </div>
       <div className="section">
-        <h3 className="ta-center">My Stack</h3>
+        <h3 className="ta-center">My Stack & Tools</h3>
         <StackList />
         <p className="ta-right">... and learning more everyday!</p>
       </div>
+      <br/>
+      <h3 className="ta-center">Some life experiences</h3>
       <div className="section section-colored-background">
         <Timeline />
       </div>

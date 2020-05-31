@@ -13,7 +13,7 @@ body {
   }
   &::selection {
     background-color: $orange;
-    color: white;
+    color: #fff;
   }
 }
 
@@ -29,6 +29,7 @@ p {
 
 a {
   color: $orange;
+  font-size: 18px;
   &:hover {
   }
 }

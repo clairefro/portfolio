@@ -7,6 +7,7 @@ import css3 from '../../images/icons/stack/css3.svg'
 import express from '../../images/icons/stack/express.svg'
 import figma from '../../images/icons/stack/figma.svg'
 import gatsby from '../../images/icons/stack/gatsby.svg'
+import gimp from '../../images/icons/stack/gimp.svg'
 import github from '../../images/icons/stack/github.svg'
 import graphql from '../../images/icons/stack/graphql.svg'
 import heroku from '../../images/icons/stack/heroku.svg'
@@ -143,6 +144,11 @@ export const stackListData = [
     category: "tools",
     name: "Inkscape",
     icon: inkscape,
+  },
+  {
+    category: "tools",
+    name: "Gimp",
+    icon: gimp,
   },
   {
     category: "tools",

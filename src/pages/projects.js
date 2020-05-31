@@ -5,6 +5,8 @@ import Project from '../components/project'
 
 // Images
 import imgIncorpus from '../../static/images/projects/incorpus.png'
+import imgVegetables from '../../static/images/projects/vegetables.jpg'
+import imgMememaker from '../../static/images/projects/mememaker.jpg'
 import imgBonjourhi from '../../static/images/projects/bonjourhi.png'
 import imgNYSE from '../../static/images/projects/nyse.png'
 import imgAMSIR from '../../static/images/projects/amisayingitright.png'
@@ -19,7 +21,7 @@ export default () => (
         <Project
           img={imgIncorpus}
           title="inCORPUS website"
-          description="French and English B2B marketing website for an athletic technology company"
+          description="Bilingual B2B marketing website for an athletic-tech company"
           stack={['gatsby', 'react', 'graphql', 'contentful', 'netlify', 'intercom']}
           links={[
             ['Live site', 'https://www.in-corpus.com/'],
@@ -28,9 +30,19 @@ export default () => (
         />
       </Fade>
       <Project
+        img={imgVegetables}
+        title="'The Power of Vegetables'"
+        description="Marketing site for a self-published children's book about deer and toots"
+        stack={['gatsby', 'react', 'graphql', 'netlify', 'gimp']}
+        links={[
+          ['Live site', 'https://www.power-of-vegetables.com/'],
+          ['Code', 'https://github.com/clairefro/power-of-vegetables'],
+        ]}
+      />
+      <Project
         img={imgNYSE}
         title="NY Sock Exchange"
-        description="A fake e-commerce site for buying and selling socks, complete with user authentication and checkout. Enjoy a shopping spree on my credit card: 4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
+        description="A fake e-commerce site for buying and selling socks, complete with user authentication and checkout.<br /><br />Enjoy a shopping spree on my credit card:<br />4242 4242 4242 4242 (exp. 2/22, sec. code: 222)"
         stack={['next', 'react', 'apollo', 'jest', 'prisma', 'graphql', 'heroku', 'stripe', 'postgresql']}
         links={[
           ['Demo', 'https://nyse-next-prod.herokuapp.com/'],
@@ -38,9 +50,20 @@ export default () => (
         ]}
       />
       <Project
+        img={imgMememaker}
+        title="Build-a-meme"
+        description="Submission for Mintbeans hackathon challenge: build a meme-maker in under 4 hours. Allows layout editing and meme download. Voted first place!"
+        stack={['react', 'sass']}
+        links={[
+          ['Demo', 'https://clairefro.github.io/meme-maker2/'],
+          ['Code', 'https://github.com/clairefro/meme-maker2'],
+          ['Announcement', 'https://www.linkedin.com/posts/mintbean_careerhack-mintbean-hackathons-activity-6671529819148206080-WpCX/'],
+        ]}
+      />
+      <Project
         img={imgBonjourhi}
         title="BonjourHi"
-        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP designed and built in 10 days with a team of four."
+        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP designed and built in 10 days with a team of four in a coding bootcamp."
         stack={['rails', 'js', 'sass', 'heroku', 'postgresql']}
         links={[
           ['Demo', 'https://bonjourhiapp.herokuapp.com/'],
@@ -62,7 +85,7 @@ export default () => (
       <Project
         img={imgAirbnb}
         title="Airbnb Clone"
-        description="Simple Airbnb clone I used for teaching an Intro to React workshop to Le Wagon Coding Bootcamp graduates."
+        description="Simple Airbnb landing clone I enhanced for teaching an Intro to React workshop to Le Wagon Coding Bootcamp graduates."
         stack={['react', 'css3', 'mapbox']}
         links={[
           ['Demo', 'https://clairefro.github.io/airbnb-clone/'],

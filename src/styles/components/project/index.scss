@@ -69,3 +69,35 @@
     }
   }
 }
+
+@media only screen and (max-width: $Tablets) {
+  .project {
+    flex-direction: column;
+    img {
+      height: 200px;
+      width: 50%;
+      object-fit: contain;
+      &:hover {
+        transform: scale(1.8) translateY(50%);
+        transition: 0.3s ease;
+        cursor: -moz-zoom-in;
+        cursor: -webkit-zoom-in;
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $Phones) {
+  .project {
+    flex-direction: column;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: contain;
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
