@@ -4,8 +4,9 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <div className="contact-form">
-      <form name="contact" method="POST" data-netlify="true" className="contact">
+      <form name="contact" method="POST" data-netlify="true" className="contact" data-netlify-honeypot="bot-field">
         <p>Have a question, or interested in working together?</p>
+        <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Name</label>
         <input type="text" name="name" />
         <label htmlFor="email">Email</label>
