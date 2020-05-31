@@ -1,10 +1,14 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Socials from './socials'
 
 const Footer = () => (
   <div className="footer">
-    <Socials />
+    <div className="footer-content">
+      <Socials />
+      <Link to="/contact">Contact</Link>
+    </div>
   </div>
 )
 
