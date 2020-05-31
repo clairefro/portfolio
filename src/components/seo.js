@@ -4,8 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import { useStaticQuery, graphql } from "gatsby"
 import { useLocation } from "@reach/router"
 
-import { usePageContext } from '../context/pageContext'
-
 const SEO = ({
     title,
     titleTemplate,
@@ -49,27 +47,6 @@ const SEO = ({
         href: canonical || fullUrl,
       },
     ],
-    // language alternate tags
-    // .concat(site.siteMetadata.supportedLangs.map(lng=> {
-    //   if (lng === 'en') {
-    //     console.log(`${baseUrl}/${pathname.split('/').splice(2).join('/')}`)
-    //     return (
-    //       {
-    //         rel: 'alternate',
-    //         hreflang: lng,
-    //         href: `${baseUrl}/${pathname.split('/').splice(2).join('/')}`
-    //       }
-    //     )
-    //   } else {
-    //     return (
-    //       {
-    //         rel: 'alternate',
-    //         hreflang: lng,
-    //         href: `${baseUrl}/${lng}/${pathname.split('/').splice(2).join('/')}`
-    //       }
-    //     )
-    //   }
-    // })),
     // OG defaults
     og: {
       title: 'Portfolio',

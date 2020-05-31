@@ -1,6 +1,7 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
 
+import SEO from '../components/seo'
 import Project from '../components/project'
 
 // Images
@@ -16,6 +17,10 @@ import imgClairefro from '../../static/images/projects/clairefro.png'
 
 export default () => (
   <div className="container">
+    <SEO
+      title="Projects"
+      description="Portfolio of projects for clients and personal interest"
+    />
     <div className="page">
       <Fade bottom>
         <Project

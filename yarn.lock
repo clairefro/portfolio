@@ -5006,6 +5006,11 @@ gatsby-plugin-page-creator@^2.2.3:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-react-helmet-async@^1.0.17-0:
+  version "1.0.17-0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet-async/-/gatsby-plugin-react-helmet-async-1.0.17-0.tgz#04da19903aaa2e53e5a2d2967d2ad5240cd47dc5"
+  integrity sha512-iPTWzqUvst/PBBgpsafsaAeFOO8FdgChr6b0djz7a1cHHgbR//2R8gua+nel2hYb3Jnl13RZ1tXfU3CLKqjdvQ==
+
 gatsby-plugin-sass@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.2.3.tgz#4a15954b85a7ebbb612d6bc94854f9e76e6af03c"

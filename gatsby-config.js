@@ -11,6 +11,7 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-sass`
   ],
