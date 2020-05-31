@@ -9,7 +9,7 @@ import Socials from '../components/socials'
 
 export default () => (
   <>
-    <SEO />
+    <SEO title="Portfolio"/>
     <div className="container">
       <Fade bottom>
         <div className="page">
