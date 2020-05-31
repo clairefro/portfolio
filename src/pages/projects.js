@@ -68,7 +68,7 @@ export default () => (
       <Project
         img={imgBonjourhi}
         title="BonjourHi"
-        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP designed and built in 10 days with a team of four in a coding bootcamp."
+        description="App for finding and meeting language partners. Allows you to take vocab notes with your voice. MVP designed and built in 10 days with a team of four in a coding bootcamp. (Search 'Montreal' for the city to see demo)"
         stack={['rails', 'js', 'sass', 'heroku', 'postgresql']}
         links={[
           ['Demo', 'https://bonjourhiapp.herokuapp.com/'],
