@@ -103,7 +103,7 @@ export default () => (
         description="A channeled real-time chat app modeled after Slack. Be warned that all chats are completely public"
         stack={['react', 'redux', 'css3']}
         links={[
-          ['Demo', 'https://clairefro.github.io/https://clairefro.github.io/chat-redux/'],
+          ['Demo', 'https://clairefro.github.io/chat-redux/'],
           ['Code', 'https://github.com/clairefro/chat-redux'],
         ]}
       />
