@@ -110,7 +110,7 @@ export default () => (
         img={imgClairefro}
         title="... this website"
         description="So meta."
-        stack={['react', 'gatsby', 'sass']}
+        stack={['react', 'gatsby', 'sass','netlify']}
         links={[
           ['Code', 'https://github.com/clairefro/portfolio'],
         ]}
