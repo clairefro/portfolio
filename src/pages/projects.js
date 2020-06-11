@@ -22,15 +22,14 @@ export default () => (
       description="Portfolio of projects for clients and personal interest"
     />
     <div className="page">
-      <Fade bottom>
+      <Fade>
         <Project
           img={imgIncorpus}
           title="inCORPUS website"
-          description="Bilingual B2B marketing website for an athletic-tech company"
+          description="Bilingual B2B marketing website for an athletic-tech company (contact me to see code)"
           stack={['gatsby', 'react', 'graphql', 'contentful', 'netlify', 'intercom']}
           links={[
             ['Live site', 'https://www.in-corpus.com/'],
-            ['Code', 'https://github.com/clairefro/incorpus'],
           ]}
         />
       </Fade>
