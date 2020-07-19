@@ -18,14 +18,14 @@ export default () => (
       description="Keeping with the open source spirit. Articles, tutorials, npm packages and more"
     />
     <Fade bottom>
-      <div className="page">
-        <div className="text-box">
+      <div className="page jc-center">
+        <div className="text-box center">
           <h2>Contributions</h2>
-          <p>I've benefitted from hundreds of free teachings and articles. I'd like to keep the open source wheel turning by sharing my learnings and time.</p>
+          <p>I've benefitted from hundreds of free teachings and articles. Keeping the open source wheel turning by sharing learnings and tools.</p>
         </div>
         <br />
         <br />
-        <h3>Articles</h3>
+        <h3 className="ta-center">Articles</h3>
         <Project
           img={imgASIR}
           title="If Web Apps Could Talk — Intro to the Web Speech API"
@@ -58,7 +58,7 @@ export default () => (
         />
         <br />
         <br />
-        <h3>npm packages</h3>
+        <h3 className="ta-center">npm packages</h3>
         <Project
           img={imgMintbeanCLI}
           title="Mintbean CLI"

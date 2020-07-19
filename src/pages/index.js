@@ -12,7 +12,6 @@ export default () => (
     <div className="container">
       <Fade bottom>
         <div className="page">
-
           <div className="ta-center">
             <h3>Hello world!</h3>
             <p>I like to build things with people.</p>

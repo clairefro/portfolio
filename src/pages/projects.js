@@ -14,6 +14,8 @@ import imgAMSIR from '../../static/images/projects/amisayingitright.png'
 import imgAirbnb from '../../static/images/projects/airbnb.png'
 import imgSlack from '../../static/images/projects/slack.png'
 import imgClairefro from '../../static/images/projects/clairefro.png'
+import imgPosterMaker from '../../static/images/projects/postermaker.png'
+import imgSmalltalk from '../../static/images/projects/smalltalk.png'
 
 export default () => (
   <div className="container">
@@ -51,17 +53,6 @@ export default () => (
         links={[
           ['Demo', 'https://nyse-next-prod.herokuapp.com/'],
           ['Code', 'https://github.com/clairefro/ny-sock-exchange'],
-        ]}
-      />
-      <Project
-        img={imgMememaker}
-        title="Build-a-meme"
-        description="Submission for Mintbeans hackathon challenge: build a meme-maker in under 4 hours. Allows layout editing and meme download. Voted first place!"
-        stack={['react', 'sass']}
-        links={[
-          ['Demo', 'https://clairefro.github.io/meme-maker2/'],
-          ['Code', 'https://github.com/clairefro/meme-maker2'],
-          ['Announcement', 'https://www.linkedin.com/posts/mintbean_careerhack-mintbean-hackathons-activity-6671529819148206080-WpCX/'],
         ]}
       />
       <Project
@@ -115,6 +106,44 @@ export default () => (
           ['Code', 'https://github.com/clairefro/portfolio'],
         ]}
       />
+      <br/>
+      <br/>
+      <h3 className="ta-center">Mintbean Hackathon Submissions</h3>
+      <div className="text-box center ta-center">Projects designed, built and deployed in under 4 hours</div>
+      <Project
+        img={imgPosterMaker}
+        title="Inspirational Poster Maker"
+        description="Challenge: 'Make something with a photo API'. Search stock photos and generate a corny inspirational poster with text. Voted first place!"
+        stack={['react', 'sass']}
+        links={[
+          ['Demo', 'https://clairefro.github.io/inspiration-poster-maker/'],
+          ['Code', 'https://github.com/clairefro/inspiration-poster-maker'],
+          ['Comments', 'https://www.mintbean.io/project/c05ab74f-ed94-4734-bd2d-22fcd707fb6e'],
+        ]}
+      />
+      <Project
+        img={imgSmalltalk}
+        title="Smalltalk Forecaster"
+        description="Challenge: 'Make something with a weather API'. See a smalltalk forecast for anywhere in the world. Voted first place!"
+        stack={['react', 'sass']}
+        links={[
+          ['Demo', 'https://clairefro.github.io/smalltalk-forecast/'],
+          ['Code', 'https://github.com/clairefro/smalltalk-forecast'],
+          ['Comments', 'https://www.mintbean.io/project/6082d717-dc3a-41f8-8790-60d7d5205256'],
+        ]}
+      />
+      <Project
+        img={imgMememaker}
+        title="Build-a-meme"
+        description="Challenge: 'Build a meme-maker'. Allows meme layout editing and download. Voted first place!"
+        stack={['react', 'sass']}
+        links={[
+          ['Demo', 'https://clairefro.github.io/meme-maker2/'],
+          ['Code', 'https://github.com/clairefro/meme-maker2'],
+          ['Announcement', 'https://www.linkedin.com/posts/mintbean_careerhack-mintbean-hackathons-activity-6671529819148206080-WpCX/'],
+        ]}
+      />
+
     </div>
   </div>
 )
