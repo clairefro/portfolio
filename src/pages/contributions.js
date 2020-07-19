@@ -8,6 +8,7 @@ import imgASIR from '../../static/images/contributions/ASIR.jpg'
 import imgPrettyTitles from '../../static/images/contributions/prettytitles.jpg'
 import imgActiveCampaign from '../../static/images/contributions/activecampaign.jpg'
 
+import imgMintbeanCLI from '../../static/images/contributions/mintbean-cli.png'
 import imgMintbeanStarter from '../../static/images/contributions/mintbean-starter.jpg'
 
 export default () => (
@@ -58,6 +59,16 @@ export default () => (
         <br />
         <br />
         <h3>npm packages</h3>
+        <Project
+          img={imgMintbeanCLI}
+          title="Mintbean CLI"
+          description="A command line tool for templating, developing and deploying static web apps for Mintbean 4-hour Hackathons"
+          stack={['Node.js','npm']}
+          links={[
+            ['npm', 'https://www.npmjs.com/package/mintbean-cli'],
+            ['Code', 'https://github.com/clairefro/mintbean-cli',]
+          ]}
+        />
         <Project
           img={imgMintbeanStarter}
           title="Mintbean hackathon React starter"
