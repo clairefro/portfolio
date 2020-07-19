@@ -5,8 +5,6 @@ import StackItem from './stackItem'
 import { stackListData } from '../../../static/data/stacklist'
 
 const StackList = () => {
-  const categories = Object.keys(stackListData)
-  console.log(categories)
   return (
     <div className="stack-list">
       {stackListData.map((category, i) => (

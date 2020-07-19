@@ -16,9 +16,6 @@ const Project = (props) => {
     ...otherProps
   } = props
 
-  // const stackListItemIcons = stackListData.filter(s => {
-  //   return stack.map(x => x.toLowerCase()).includes(s.name.toLowerCase())
-  //   })
   const allIcons = stackListData.map(item => item.icons).flat()
   const stackListItemIcons = allIcons.filter(s => {
     return stack.map(x => x.toLowerCase()).includes(s.name.toLowerCase())
