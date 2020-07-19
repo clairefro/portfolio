@@ -8,6 +8,8 @@ import imgASIR from '../../static/images/contributions/ASIR.jpg'
 import imgPrettyTitles from '../../static/images/contributions/prettytitles.jpg'
 import imgActiveCampaign from '../../static/images/contributions/activecampaign.jpg'
 
+import imgGithub from '../../static/images/contributions/github.png'
+
 import imgMintbeanCLI from '../../static/images/contributions/mintbean-cli.png'
 import imgMintbeanStarter from '../../static/images/contributions/mintbean-starter.jpg'
 
@@ -25,7 +27,7 @@ export default () => (
         </div>
         <br />
         <br />
-        <h3 className="ta-center">Articles</h3>
+        <h3 className="ta-center">Tutorials</h3>
         <Project
           img={imgASIR}
           title="If Web Apps Could Talk — Intro to the Web Speech API"
@@ -58,15 +60,27 @@ export default () => (
         />
         <br />
         <br />
+        <h3 className="ta-center">Webinars</h3>
+        <Project
+          img={imgGithub}
+          title="Intro to Git & GitHub"
+          description="Free webinar for high school and Canadian CEGEP students as a part of the Kurius Learnathon"
+          stack={['github']}
+          links={[
+            ['Youtube', 'https://www.youtube.com/watch?v=JD1RRPVb-C8',]
+          ]}
+        />
+        <br />
+        <br />
         <h3 className="ta-center">npm packages</h3>
         <Project
           img={imgMintbeanCLI}
-          title="Mintbean CLI"
-          description="A command line tool for templating, developing and deploying static web apps for Mintbean 4-hour Hackathons"
+          title="Mintbean CLI tool"
+          description="A command line tool for templating, developing and deploying static Mintbean Hackathon submissions"
           stack={['Node.js','npm']}
           links={[
-            ['npm', 'https://www.npmjs.com/package/mintbean-cli'],
-            ['Code', 'https://github.com/clairefro/mintbean-cli',]
+            ['npm', 'https://www.npmjs.com/package/cra-template-mintbean-challenge-react-starter'],
+            ['Code', 'https://github.com/clairefro/mintbean-challenge-react-starter',]
           ]}
         />
         <Project
@@ -79,6 +93,7 @@ export default () => (
             ['Code', 'https://github.com/clairefro/mintbean-challenge-react-starter',]
           ]}
         />
+
       </div>
     </Fade>
 
