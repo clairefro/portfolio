@@ -14,13 +14,11 @@ export default () => (
         <div className="page">
 
           <div className="ta-center">
-            <Socials />
             <h3>Hello world!</h3>
             <p>I like to build things with people.</p>
             <Link to="/projects">Take a look</Link>
           </div>
           <div className="section">
-            <h3 className="ta-center">My Stack & Tools</h3>
             <StackList />
             <p className="ta-right">... and learning more everyday!</p>
           </div>

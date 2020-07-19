@@ -2,6 +2,8 @@ import React from 'react'
 import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
 
+import Socials from './socials'
+
 import imgMe from '../../static/images/general/half-duck.png'
 
 const MainBanner = () => {
@@ -14,6 +16,7 @@ const MainBanner = () => {
         <div>
           <h1>{'{ Claire Froelich }'}</h1>
           <h2>{'// Full Stack Web Developer'}</h2>
+          <Socials />
         </div>
       </Fade>
     </div>
