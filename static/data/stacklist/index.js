@@ -25,184 +25,186 @@ import npm from '../../images/icons/stack/npm.svg'
 import postgresql from '../../images/icons/stack/postgresql.svg'
 import postman from '../../images/icons/stack/postman.svg'
 import prisma from '../../images/icons/stack/prisma.svg'
+import pug from '../../images/icons/stack/pug.svg'
 import rails from '../../images/icons/stack/rails.svg'
 import react from '../../images/icons/stack/react.svg'
 import redux from '../../images/icons/stack/redux.svg'
 import ruby from '../../images/icons/stack/ruby.svg'
 import sass from '../../images/icons/stack/sass.svg'
 import stripe from '../../images/icons/stack/stripe.svg'
+import tailwind from '../../images/icons/stack/tailwind.svg'
+import vue from '../../images/icons/stack/vue.svg'
 import webpack from '../../images/icons/stack/webpack.svg'
 import yarn from '../../images/icons/stack/yarn.svg'
 
 export const stackListData = [
   {
-    category: "frontend",
-    name: "JS",
-    icon: js,
+    name: "Frontend",
+    icons: [
+      {
+        name: "JS",
+        icon: js,
+      },
+      {
+        name: "React",
+        icon: react,
+      },
+      {
+        name: "Redux",
+        icon: redux,
+      },
+      {
+        name: "CSS3",
+        icon: css3,
+      },
+      {
+        name: "HTML5",
+        icon: html5,
+      },
+      {
+        name: "Sass",
+        icon: sass,
+      },
+      {
+        name: "Vue",
+        icon: vue,
+      },
+      {
+        name: "Pug",
+        icon: pug,
+      },
+      {
+        name: "TailwindCSS",
+        icon: tailwind,
+      },
+      {
+        name: "Gatsby",
+        icon: gatsby,
+      },
+    ],
+
   },
   {
-    category: "frontend",
-    name: "React",
-    icon: react,
+    name: "Backend",
+    icons: [
+      {
+        name: "Ruby",
+        icon: ruby,
+      },
+      {
+        name: "Rails",
+        icon: rails,
+      },
+      {
+        name: "Node.js",
+        icon: nodejs,
+      },
+      {
+        name: "Express",
+        icon: express,
+      },
+      {
+        name: "GraphQL",
+        icon: graphql,
+      },
+      {
+        name: "PostgreSQL",
+        icon: postgresql,
+      },
+      {
+        name: "Prisma",
+        icon: prisma,
+      },
+      {
+        name: "Apollo",
+        icon: apollostack,
+      },
+      {
+        name: "Next",
+        icon: next,
+      },
+    ],
   },
   {
-    category: "frontend",
-    name: "Redux",
-    icon: redux,
+    name: "Tools & Hosting",
+    icons: [
+      {
+        name: "Github",
+        icon: github,
+      },
+      {
+        name: "Figma",
+        icon: figma,
+      },
+      {
+        name: "inVision",
+        icon: invision,
+      },
+      {
+        name: "Inkscape",
+        icon: inkscape,
+      },
+      {
+        name: "Gimp",
+        icon: gimp,
+      },
+      {
+        name: "Postman",
+        icon: postman,
+      },
+      {
+        name: "npm",
+        icon: npm,
+      },
+      {
+        name: "Yarn",
+        icon: yarn,
+      },
+      {
+        name: "Jest",
+        icon: jest,
+      },
+      {
+        name: "Babel",
+        icon: babel,
+      },
+      {
+        name: "Webpack",
+        icon: webpack,
+      },
+      {
+        name: "Heroku",
+        icon: heroku,
+      },
+      {
+        name: "Netlify",
+        icon: netlify,
+      },
+    ],
   },
   {
-    category: "frontend",
-    name: "CSS3",
-    icon: css3,
-  },
-  {
-    category: "frontend",
-    name: "HTML5",
-    icon: html5,
-  },
-  {
-    category: "frontend",
-    name: "Sass",
-    icon: sass,
-  },
-  {
-    category: "frontend",
-    name: "Gatsby",
-    icon: gatsby,
-  },
-  {
-    category: "backend",
-    name: "Ruby",
-    icon: ruby,
-  },
-  {
-    category: "backend",
-    name: "Rails",
-    icon: rails,
-  },
-  {
-    category: "backend",
-    name: "Node.js",
-    icon: nodejs,
-  },
-  {
-    category: "backend",
-    name: "Express",
-    icon: express,
-  },
-  {
-    category: "backend",
-    name: "GraphQL",
-    icon: graphql,
-  },
-  {
-    category: "backend",
-    name: "PostgreSQL",
-    icon: postgresql,
-  },
-  {
-    category: "backend",
-    name: "Prisma",
-    icon: prisma,
-  },
-  {
-    category: "backend",
-    name: "Apollo",
-    icon: apollostack,
-  },
-  {
-    category: "backend",
-    name: "Next",
-    icon: next,
-  },
-  {
-    category: "hosting",
-    name: "Heroku",
-    icon: heroku,
-  },
-  {
-    category: "hosting",
-    name: "Netlify",
-    icon: netlify,
-  },
-  {
-    category: "tools",
-    name: "Github",
-    icon: github,
-  },
-  {
-    category: "tools",
-    name: "Figma",
-    icon: figma,
-  },
-  {
-    category: "tools",
-    name: "inVision",
-    icon: invision,
-  },
-  {
-    category: "tools",
-    name: "Inkscape",
-    icon: inkscape,
-  },
-  {
-    category: "tools",
-    name: "Gimp",
-    icon: gimp,
-  },
-  {
-    category: "tools",
-    name: "Postman",
-    icon: postman,
-  },
-  {
-    category: "tools",
-    name: "npm",
-    icon: npm,
-  },
-  {
-    category: "tools",
-    name: "Yarn",
-    icon: yarn,
-  },
-  {
-    category: "tools",
-    name: "Jest",
-    icon: jest,
-  },
-  {
-    category: "tools",
-    name: "Babel",
-    icon: babel,
-  },
-  {
-    category: "tools",
-    name: "Webpack",
-    icon: webpack,
-  },
-  {
-    category: "api",
-    name: "Contentful",
-    icon: contentful,
-  },
-  {
-    category: "api",
-    name: "Airtable",
-    icon: airtable,
-  },
-  {
-    category: "api",
-    name: "Intercom",
-    icon: intercom,
-  },
-  {
-    category: "api",
-    name: "Stripe",
-    icon: stripe,
-  },
-  {
-    category: "api",
-    name: "Mapbox",
-    icon: mapbox,
+    name: "API",
+    icons: [
+      {
+        name: "Contentful",
+        icon: contentful,
+      },
+      {
+        name: "Airtable",
+        icon: airtable,
+      },
+      {
+        name: "Intercom",
+        icon: intercom,
+      },
+      {
+        name: "Stripe",
+        icon: stripe,
+      },
+      {
+        name: "Mapbox",
+        icon: mapbox,
+      },
+    ],
   },
 ]

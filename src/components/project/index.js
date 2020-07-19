@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SVG from 'react-inlinesvg'
 
+import StackItemWithTooltip from '../stackList/stackItemWithTooltip'
 // Data
 import { stackListData } from '../../../static/data/stacklist'
 
@@ -16,14 +16,14 @@ const Project = (props) => {
     ...otherProps
   } = props
 
-  const stackListItemIcons = stackListData.filter(s => {
-    return stack.map(x=> x.toLowerCase()).includes(s.name.toLowerCase())
-    })
-  .map((s,i) => (
-    <div key={i} className="project-stack-list-item-icon">
-      <SVG src={s.icon} />
-      <div className="project-stack-list-item-icon-tooltip">{s.name}</div>
-    </div>
+  // const stackListItemIcons = stackListData.filter(s => {
+  //   return stack.map(x => x.toLowerCase()).includes(s.name.toLowerCase())
+  //   })
+  const allIcons = stackListData.map(item => item.icons).flat()
+  const stackListItemIcons = allIcons.filter(s => {
+    return stack.map(x => x.toLowerCase()).includes(s.name.toLowerCase())
+  }).map((s,i) => (
+    <StackItemWithTooltip key={i} name={s.name} icon={s.icon}/>
   ))
 
   const formattedLinks = links.map((l,i) => (
@@ -65,6 +65,6 @@ Project.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
-  stack: PropTypes.arrayOf(PropTypes.oneOf(stackListData.map(s => s.name.toLowerCase()))),
+  // stack: PropTypes.arrayOf(PropTypes.oneOf(stackListData.map(s => s.name.toLowerCase()))),
   links: PropTypes.arrayOf(PropTypes.array),
 }
