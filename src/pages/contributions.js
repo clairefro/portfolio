@@ -23,7 +23,7 @@ export default () => (
       <div className="page jc-center">
         <div className="text-box center">
           <h2>Contributions</h2>
-          <p>I've benefitted from hundreds of free teachings and articles. Keeping the open source wheel turning by sharing learnings and tools.</p>
+          <p>I've benefitted from hundreds of free teachings and articles. Keeping the open source wheel turning by sharing my learnings and creating new tools.</p>
         </div>
         <br />
         <br />

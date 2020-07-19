@@ -15,7 +15,11 @@ export default () => (
           <div className="ta-center">
             <h3>Hello world!</h3>
             <p>I like to build things with people.</p>
-            <Link to="/projects">Take a look</Link>
+            <Link to="/projects">Take a look {'>>'}</Link>
+            <br/>
+            <br/>
+            <p>I can build you a custom static website with SEO in under 5 days.</p>
+            <Link to="/contact">Get a quote {'>>'}</Link>
           </div>
           <div className="section">
             <StackList />

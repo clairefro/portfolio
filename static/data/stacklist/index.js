@@ -17,6 +17,7 @@ import intercom from '../../images/icons/stack/intercom.svg'
 import invision from '../../images/icons/stack/invision.svg'
 import jest from '../../images/icons/stack/jest.svg'
 import js from '../../images/icons/stack/js.svg'
+import mailchimp from '../../images/icons/stack/mailchimp.svg'
 import mapbox from '../../images/icons/stack/mapbox.svg'
 import netlify from '../../images/icons/stack/netlify.svg'
 import next from '../../images/icons/stack/nextjs.svg'
@@ -204,6 +205,10 @@ export const stackListData = [
       {
         name: "Mapbox",
         icon: mapbox,
+      },
+      {
+        name: "Mailchimp",
+        icon: mailchimp,
       },
     ],
   },

@@ -31,17 +31,16 @@ export default () => (
           description="Bilingual B2B marketing website for an athletic-tech company (contact me to see code)"
           stack={['gatsby', 'react', 'graphql', 'contentful', 'netlify', 'intercom']}
           links={[
-            ['Live site', 'https://www.in-corpus.com/'],
+            ['View site', 'https://www.in-corpus.com/'],
           ]}
         />
-
         <Project
           img={imgVegetables}
           title="'The Power of Vegetables'"
           description="Marketing site for a self-published children's book about deer and toots"
-          stack={['gatsby', 'react', 'graphql', 'netlify', 'gimp']}
+          stack={['gatsby', 'react', 'graphql', 'netlify', 'gimp', 'mailchimp']}
           links={[
-            ['Live site', 'https://www.power-of-vegetables.com/'],
+            ['View site', 'https://www.power-of-vegetables.com/'],
             ['Code', 'https://github.com/clairefro/power-of-vegetables'],
           ]}
         />

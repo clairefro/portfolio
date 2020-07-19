@@ -7,7 +7,23 @@ const Footer = () => (
   <div className="footer">
     <div className="footer-content">
       <Socials />
-      <Link to="/contact">Contact</Link>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/contributions">Contributions</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+
+      <p>Copyright {(new Date()).getFullYear()} Claire Froelich</p>
+      <p>Icons & logos by <a href="https://svgporn.com/" rel="noopener noreferrer" target="_blank">SVG Porn</a></p>
     </div>
   </div>
 )
