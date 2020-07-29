@@ -113,7 +113,7 @@ export default () => (
         />
         <br/>
         <br/>
-        <h3 className="ta-center">Other Ptojects</h3>
+        <h3 className="ta-center">Other Projects</h3>
         <Project
           img={imgAMSIR}
           title="Am I Saying it Right?"
