@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import Project from '../components/project'
 
 // Images
-import imgIncorpus from '../../static/images/projects/incorpus.png'
+import imgIncorpus from '../../static/images/projects/incorpus.jpg'
 import imgVegetables from '../../static/images/projects/vegetables.jpg'
 import imgMememaker from '../../static/images/projects/mememaker.jpg'
 import imgBonjourhi from '../../static/images/projects/bonjourhi.png'
