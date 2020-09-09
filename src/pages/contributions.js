@@ -79,8 +79,8 @@ export default () => (
           description="A command line tool for templating, developing and deploying static Mintbean Hackathon submissions"
           stack={['Node.js','npm']}
           links={[
-            ['npm', 'https://www.npmjs.com/package/cra-template-mintbean-challenge-react-starter'],
-            ['Code', 'https://github.com/clairefro/mintbean-challenge-react-starter',]
+            ['npm', 'https://www.npmjs.com/package/mintbean-cli'],
+            ['Code', 'https://github.com/Mintbean/mintbean-cli',]
           ]}
         />
         <Project

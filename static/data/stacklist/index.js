@@ -34,6 +34,7 @@ import ruby from '../../images/icons/stack/ruby.svg'
 import sass from '../../images/icons/stack/sass.svg'
 import stripe from '../../images/icons/stack/stripe.svg'
 import tailwind from '../../images/icons/stack/tailwind.svg'
+import typescript from '../../images/icons/stack/typescript.svg'
 import vue from '../../images/icons/stack/vue.svg'
 import webpack from '../../images/icons/stack/webpack.svg'
 import yarn from '../../images/icons/stack/yarn.svg'
@@ -45,6 +46,10 @@ export const stackListData = [
       {
         name: "JS",
         icon: js,
+      },
+      {
+        name: "Typescript",
+        icon: typescript
       },
       {
         name: "React",

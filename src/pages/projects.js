@@ -16,6 +16,7 @@ import imgSlack from '../../static/images/projects/slack.png'
 import imgClairefro from '../../static/images/projects/clairefro.png'
 import imgPosterMaker from '../../static/images/projects/postermaker.png'
 import imgSmalltalk from '../../static/images/projects/smalltalk.png'
+import imgTones from '../../static/images/projects/tones.jpg'
 
 export default () => (
   <div className="container">
@@ -131,8 +132,8 @@ export default () => (
           description="Simple Airbnb landing clone I enhanced for teaching an Intro to React workshop to Le Wagon Coding Bootcamp graduates."
           stack={['react', 'css3', 'mapbox']}
           links={[
-            ['Demo', 'https://clairefro.github.io/airbnb-clone/'],
-            ['Code', 'https://github.com/clairefro/airbnb-clone'],
+            ['Demo', 'https://clairefro.github.io/airbnb-clone-react-map-gl/'],
+            ['Code', 'https://github.com/clairefro/airbnb-clone-react-map-gl'],
           ]}
         />
         <Project
@@ -143,6 +144,16 @@ export default () => (
           links={[
             ['Demo', 'https://clairefro.github.io/chat-redux/'],
             ['Code', 'https://github.com/clairefro/chat-redux'],
+          ]}
+        />
+        <Project
+          img={imgTones}
+          title="Tones of the universe"
+          description="Just playing by mapping digits to tones (split an octave into 9 parts)"
+          stack={['react']}
+          links={[
+            ['Demo', 'https://clairefro.github.io/tone-test/'],
+            ['Code', 'https://github.com/clairefro/tone-test'],
           ]}
         />
       </Fade>
