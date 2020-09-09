@@ -76,7 +76,7 @@ export default () => (
         <Project
           img={imgMintbeanCLI}
           title="Mintbean CLI tool"
-          description="A command line tool for templating, developing and deploying static Mintbean Hackathon submissions"
+          description="A command line tool for templating, developing and deploying static Mintbean Hackathon submissions. Now officially adopted by Mintbean as an open source project!"
           stack={['Node.js','npm']}
           links={[
             ['npm', 'https://www.npmjs.com/package/mintbean-cli'],
